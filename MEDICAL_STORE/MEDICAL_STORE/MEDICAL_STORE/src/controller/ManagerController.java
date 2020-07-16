@@ -1,0 +1,103 @@
+package controller;
+
+import contracts.Screens;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.stage.Stage;
+import model.AccountManager;
+
+import java.util.Objects;
+
+public class ManagerController {
+    @FXML
+    private Label welcomeLabel;
+
+
+    public void addmedicineClicked() {
+        Parent root;
+
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("views/addmedicineForm.fxml")));
+            Stage stage = new Stage();
+            stage.setTitle("Add medicine Form");
+            stage.setScene(new Scene(root));
+            stage.show();
+        }catch (java.io.IOException exception){
+            System.out.println("Couldn't launch add medicine form Screen");
+        }
+    }
+
+    public void editmedicineClicked(ActionEvent actionEvent) {
+        Parent root;
+
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("views/editmedicineForm.fxml")));
+            Stage stage = new Stage();
+            stage.setTitle("Edit medicine Form");
+            stage.setScene(new Scene(root));
+            stage.show();
+        }catch (java.io.IOException exception){
+            System.out.println("Couldn't launch edit medicine form Screen");
+        }
+    }
+
+    public void promoteUserClicked(ActionEvent actionEvent) {
+        Parent root;
+
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("views/promoteUserForm.fxml")));
+            Stage stage = new Stage();
+            stage.setTitle("Promote User Form");
+            stage.setScene(new Scene(root));
+            stage.show();
+        }catch (java.io.IOException exception){
+            System.out.println("Couldn't launch promote user form Screen");
+        }
+    }
+
+    public void placeOrderBtnClikced() {
+        Parent root;
+
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("views/orderPlaceForm.fxml")));
+            Stage stage = new Stage();
+            stage.setTitle("Place Order Form");
+            stage.setScene(new Scene(root));
+            stage.show();
+        }catch (java.io.IOException exception){
+            System.out.println("Couldn't launch place order form Screen");
+        }
+    }
+
+    public void confirmOrderBtnClicked() {
+        Parent root;
+
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("views/confirmOrderForm.fxml")));
+            Stage stage = new Stage();
+            stage.setTitle("Confirm Order Form");
+            stage.setScene(new Scene(root));
+            stage.show();
+        }catch (java.io.IOException exception){
+            System.out.println("Couldn't launch confirm order form Screen");
+        }
+    }
+
+    public void viewReports(ActionEvent event){
+        Parent root;
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("views/reportsScreen.fxml")));
+            Stage stage = new Stage();
+            stage.setTitle(Screens.REPORTS_SCREEN);
+            stage.setScene(new Scene(root));
+            stage.show();
+        }catch (java.io.IOException exception){
+            System.out.println("Couldn't launch reports Screen");
+        }
+    }
+}

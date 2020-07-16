@@ -1,0 +1,73 @@
+#AddPane{
+	-fx-background-color: #95a8ab;
+}
+
+#ConfirmPane{
+	-fx-background-color: #95a8ab;
+}
+
+#CustomerPane{
+	-fx-background-color: #95a8ab;
+}
+
+#EditPane{
+	-fx-background-color: #95a8ab;
+}
+
+#loginPane{
+	-fx-background-image: url("med1.jpeg");
+}
+
+#ManagerPane{
+	-fx-background-color: #95a8ab;
+}
+
+#OrderPane{
+	-fx-background-color: #95a8ab;
+}
+
+#PromotePane{
+	-fx-background-color: #95a8ab;
+}
+
+#registerScreen{
+	-fx-background-color: #95a8ab;
+}
+
+#ReportPane{
+	-fx-background-color: #95a8ab;
+}
+
+#startPane{
+    -fx-background-image: url("med1.jpeg");
+    -fx-background-size: stretch; 
+}
+#Medicine{
+	 -fx-font-size: 150%; 
+}
+
+#TopPane{
+	-fx-background-color: #95a8ab;
+}
+
+#SellPane{
+	-fx-background-color: #95a8ab;
+}
+
+#SalesPane{
+	-fx-background-color: #95a8ab;
+}
+
+#UserSPane{
+	-fx-background-color: #95a8ab;
+}
+
+
+
+
+
+
+
+
+
+

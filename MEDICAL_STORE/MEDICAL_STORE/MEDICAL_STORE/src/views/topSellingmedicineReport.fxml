@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="SellPane" prefHeight="397.0" prefWidth="245.0" xmlns="http://javafx.com/javafx/8.0.121" stylesheets="@startScreen.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TopSellingmedicinesController">
+
+    <TableView fx:id="topmedicinesTable" layoutX="9.0" layoutY="8.0" prefHeight="382.0" prefWidth="228.0">
+        <columns>
+            <TableColumn prefWidth="116.0" text="medicine idd" />
+            <TableColumn prefWidth="105.0" text="Quantity" />
+        </columns>
+    </TableView>
+
+</AnchorPane>
